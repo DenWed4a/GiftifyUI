@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.header{
+
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  min-height: 10%;
+}
+.site-search{
+
+  width: 600px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+}
+.links > *{
+  padding: 2px;
+}
+.h1-heading{
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 2%;
+}
+
+.main{
+  background-color: #F5F5DC;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1 0 auto;
+
+}
+.main-menu{
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+  width: 100%;
+}
+.category-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+
+}
+.main-logo-form{
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 300px;
+  height: 300px;
+  background-color: #FFF;
+}
+.logo-main{
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: -65px;
+  margin-bottom: -30px;
+
+
+}
+.login-form{
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+
+}
+.login-form input{
+  margin: 3px;
+  height: 30px;
+}
+.main-registration-form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+  height: inherit;
+  background-color: white;
+
+
+}
+.main-registration-form h1{
+  font-size: 24px;
+  width: 100%;
+  background-color: grey;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.registration-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.add-item-form{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.form-part{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.form-part .label-place{
+  width: 100%;
+}
+
+.place{
+  width: 100%;
+  height: 35px;
+
+}
+.big-place{
+  height: 95px;
+}
+.label-place{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 5px;
+}
+.add-image{
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.buttons{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+}
+.buttons input{
+  width: 30%;
+  height: 30px;
+  margin: 5px 0 0 5px;
+  background-color: SpringGreen;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+.button-link{
+  display: flex;
+  width: 30%;
+  height: 30px;
+  color: black;
+  margin: 5px 0 0 0;
+  border: 1px solid grey;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+}
+.button-link:active{
+  color: red;
+}
+.coupons-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/*.category-container img{
+  transition: opacity 0.7s;
+}
+.category-container img:hover { 
+  opacity: 0.5; 
+}*/
+.category-container label{
+  position: relative;
+  top: -40px;
+  bottom: -30px;
+  left: -10px;
+  border: solid 1px white;
+  border-radius: 5px;
+  display: none;
+}
+
+
+.coupon{
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: 300px;
+  border: 1px solid grey;
+  margin: 10px;
+}
+.image{
+  display: block;
+  overflow: hidden;
+  height: 55%;
+}
+.image img{
+  width: 100%;
+  
+  transition: transform 400ms ease-in-out;
+}
+.image img:hover{
+  transform: scale(1.15);
+}
+.coupon-info{
+  display: flex;
+  height: 35%;
+  flex-direction: column;
+  background-color: white;
+}
+.coupon-info-1{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+.coupon-info-2{
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  padding: 3px;
+
+}
+.coupon-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  height: 10%;
+  border-top: 1px solid grey;
+  background-color: white;
+}
+.coupon-price .button-link{
+  font-size: 11px;
+  width: 40%;
+  height: 90%;
+  margin: 0;
+}
+
+.coupon-info .material-symbols-outlined{
+  font-size: 12px;
+  padding-top: 4px;
+}
+.description{
+  font-weight: bold;
+}
