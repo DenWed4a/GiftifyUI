@@ -62,14 +62,28 @@ body {
 }
 .main-menu{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; 
   background-color: grey;
   width: 100%;
 }
 .category-container{
+  width: 13%;
+  height: 80px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 5px;
+}
+
+.category-container label{
+  position: relative;
+  top: -40px;
+  bottom: -30px;
+  border: solid 1px white;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+  padding: 3px 5px;
 }
 
 .main-content{
@@ -209,15 +223,7 @@ body {
 .category-container img:hover { 
   opacity: 0.5; 
 }*/
-.category-container label{
-  position: relative;
-  top: -40px;
-  bottom: -30px;
-  left: -10px;
-  border: solid 1px white;
-  border-radius: 5px;
-  display: none;
-}
+
 
 
 .coupon{
