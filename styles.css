@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -210,6 +213,30 @@ body {
 }
 .button-link:active{
   color: red;
+}
+.to-top{
+  position: fixed;
+  bottom: 15px;
+  right: 40px;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: grey;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.to-top.active{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
 }
 .coupons-container{
   display: flex;
