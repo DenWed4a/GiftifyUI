@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/369276db78.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    
   </head>
 
   <body>
@@ -70,29 +72,32 @@
 
 
       <div class="main-content">
-        <div class="coupons-container" id="coupon-list">
-          <div class="coupon">
-            <div class="image"><img src="images/1664890976cat-color-silhouette-outline.svg" alt="image"/></div>            
-            <div class="coupon-info">
-              <div class="coupon-info-1">
-                <p>First coupon</p>
-                <span class="material-symbols-outlined">
-                    favorite
-                </span>
+        <ul class="coupons-container" id="coupon-list">
+          <template id="coupon-template">
+            <li class="coupon">
+              <div class="image"><img src="" alt="image"/></div>            
+              <div class="coupon-info">
+                <div class="coupon-info-1">
+                  <p></p>
+                  <span class="material-symbols-outlined">
+                      favorite
+                  </span>
+                </div>
+                <div class="coupon-info-2">
+                  <p class="description">Some brief description</p>
+                  <p></p>
+                </div>
               </div>
-
-              <div class="coupon-info-2">
-                <p class="description">Some brief description</p>
-                <p>expares in 3 days</p>
+              <div class="coupon-price">
+                <p></p>
+                <a class="button-link" href="#">Add to cart</a>
               </div>
-            </div>
-            <div class="coupon-price">
-              <p>150$</p>
-              <a class="button-link" href="#">Add to cart</a>
-            </div>
-          </div>
+            </li>
+          </template>
+        </ul>
+        <div class="loading-icon">
+          <i class="fa-solid fa-circle-notch fa-spin"></i>
         </div>
-
       </div>
 
     </div>
@@ -100,9 +105,10 @@
       <i class="fa-solid fa-chevron-up"></i>
     </a>
 
-    
+    <!-- <script src="newfile.js"></script> -->
     <script src="main-menu.js"></script>
     <script src="main-page-functions.js"></script>
+    
     
   </body>
 
